@@ -1,0 +1,34 @@
+# Omni-Scaffold — .gitignore
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+
+# Credential files — NEVER commit
+~/.omni/credentials.json
+~/.omni/credentials.enc.json
+.omni/credentials*
+
+# Project state (can contain API keys in outputs)
+.omni/state.json
+
+# Test project artifacts
+demo-live/
+dry-test-proj/
+test-demo/
+test-proj/
+cloned-target-app/
+test-config.json
+
+# Build outputs
+dist/
+.next/
+.svelte-kit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
